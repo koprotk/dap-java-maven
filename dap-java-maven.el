@@ -7,13 +7,13 @@
 ;; Created: August 23, 2025
 ;; Version: 0.1.0
 ;; Keywords: dap, java, maven, test, debug
-;; Package-Requires: ((emacs "25.1") (dap-mode "0.2") (lsp-java "0.2") (maven surefire plugin 3.0.0))
+;; Package-Requires: ((emacs "25.1") (dap-mode "0.2") (lsp-java "0.2"))
 
 ;; This file is not part of GNU Emacs.
 
 ;;; Commentary:
 ;; Test and debug package for maven projects. For debugging calls 
-;; mvn surefire plugin.
+;; mvn surefire plugin, so should be able on your maven project.
 
 ;;; Code:
 
