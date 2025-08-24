@@ -7,17 +7,13 @@
 ;; Created: August 23, 2025
 ;; Version: 0.1.0
 ;; Keywords: dap, java, maven, test, debug
-;; Package-Requires: ((emacs "25.1") (dap-mode "0.2") (lsp-java "0.2"))
+;; Package-Requires: ((emacs "25.1") (dap-mode "0.2") (lsp-java "0.2") (maven surefire plugin 3.0.0))
 
 ;; This file is not part of GNU Emacs.
 
 ;;; Commentary:
-;;
-;; This package provides a convenient way to debug single Java test methods
-;; in a Maven project using dap-mode. It launches the test using `mvnDebug`
-;; and attaches the debugger, bypassing the language server's test runner.
-;; This is particularly useful for complex projects using TestNG where the
-;; default DAP test integration fails.
+;; Test and debug package for maven projects. For debugging calls 
+;; mvn surefire plugin.
 
 ;;; Code:
 
