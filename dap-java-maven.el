@@ -7,7 +7,7 @@
 ;; Created: August 23, 2025
 ;; Version: 0.1.0
 ;; Keywords: dap, java, maven, test, debug
-;; Package-Requires: ((emacs "27.1") (dap-mode "0.5") (lsp-java "1.0"))
+;; Package-Requires: ((emacs "25.1") (dap-mode "0.2") (lsp-java "0.2"))
 
 ;; This file is not part of GNU Emacs.
 
