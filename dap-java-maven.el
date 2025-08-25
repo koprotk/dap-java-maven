@@ -70,6 +70,8 @@
            :program-to-start debug-command))
     ))
 
+;;;###autoload(with-eval-after-load 'dap-java (require 'dap-java-maven))
+
 (provide 'dap-java-maven)
 
 ;;; dap-java-maven.el ends here
