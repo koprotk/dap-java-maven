@@ -5,7 +5,7 @@
 ;; Author: Daniel Muñoz <demunoz2@uc.cl>
 ;; Maintainer: Daniel Muñoz <demunoz2@uc.cl>
 ;; Created: August 23, 2025
-;; Version: 0.1.0
+;; Version: 0.1.1
 ;; Keywords: dap, java, maven, test, debug
 ;; Package-Requires: ((emacs "25.1") (dap-mode "0.2") (lsp-java "0.2"))
 
