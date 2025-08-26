@@ -5,7 +5,7 @@
 ;; Author: Daniel Muñoz <demunoz2@uc.cl>
 ;; Maintainer: Daniel Muñoz <demunoz2@uc.cl>
 ;; Created: August 23, 2025
-;; Version: 0.1.1
+;; Version: 0.1.2
 ;; Keywords: dap, java, maven, test, debug
 ;; Package-Requires: ((emacs "25.1") (dap-mode "0.2") (lsp-java "0.2"))
 
@@ -32,7 +32,8 @@
         (if test-to-run
             (dap-start-debugging (list :program-to-start (format "mvn -Dtest=%s test" test-to-run)
                                        :name test-to-run
-                                       :cwd project-root
+                                       :environment-variables `(("TERM" . "xterm-256color"))
+                                       :cwd (lsp-java--get-root)
                                        :skip-debug-session t))
           (message "Could not find a test method at point.")))
     ;; If no project is found, print an error.
@@ -61,12 +62,13 @@
          )
     (dap-debug
      (list :name (format "Debug %s" test-to-run)
+           :enviroment-variables `(("TERM" . "xterm-256color"))
            :type "java"
            :request "attach"
            :hostName "localhost"
            :wait-for-port t
            :port port
-           :cwd project-root
+           :cwd (lsp-java--get-root)
            :program-to-start debug-command))
     ))
 
