@@ -5,4 +5,5 @@ This is an extension of the classic Emacs DAP to work with Maven (Java) projects
 - Run a test class
 
 If you wish to install it on Doom Emacs, just put this code in your `package.el`:
+
     (package! dap-java-maven :recipe (:host github :repo "koprotk/emacs-dap-java-maven"))
